@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="./styles/main.css" rel="stylesheet" type="text/css" />
+
+    <script defer src="./scripts/interface.js"></script>
+</head>
+<body>
+    <header style='background-color: black'>
+        <div class="container-fluid">
+            <a href="">
+                <img src="https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg" alt="netflix logo">
+            </a>
+            <ul class="nav">
+                <li>
+                    <a class="btn" href="#">Home</a>
+                </li>
+                <li>
+                    <a class="btn" href="#">Filmes</a>
+                </li>
+                <li>
+                    <a class="btn" href="#">Séries</a>
+                </li>
+                <li>
+                    <a class="btn" href="#">Minha Lista</a>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li>
+                    <span class="material-icons">
+                        search
+                    </span>
+                </li>
+                <li>
+                    <span class="material-icons">
+                        notification_important
+                    </span>
+                </li>
+                <li>
+                    <span class="material-icons">
+                        expand_more
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="highlights">
+            <div class="cover">
+                <!-- Vai ser populado via js -->
+                <div class="movie-info">
+                    <span class="h1" id='title'>Nome do filme</span>
+                    <div class="actions">
+                        <a href="#" class="btn btn-dark">
+                            Play Movie
+                            <span class="badge badge-secondary">&#x27A4;</span>
+                        </a>
+                        <a href="#" class="btn btn-dark">
+                            Watch Later
+                            <span class="badge badge-secondary">&#43;</span>
+                        </a>
+                    </div>
+                    <div class="h3">Assista agora</div>
+                    <p class="lead" id='review'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, cum vel! Minus expedita ratione velit veniam cumque hic ipsa molestiae maxime quisquam, debitis obcaecati voluptates repellat aperiam tempora reiciendis. Nemo!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h3>Trending</h3>
+            <div class="items">
+                <div class="trigger roll-left"></div>
+                <div class="trigger roll-right" ></div>
+                <div class="items-roll trending">
+                    <!-- Filmes serão populados via js -->
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Release</h3>
+            <div class="items">
+                <div class="trigger roll-left"></div>
+                <div class="trigger roll-right"></div>
+                <div class="items-roll release">
+                    <!-- Filmes serão populados via js -->
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Melhores Filmes</h3>
+            <div class="items">
+                <div class="trigger roll-left"></div>
+                <div class="trigger roll-right"></div>
+                <div class="items-roll melhores">
+                    <!-- Filmes serão populados via js -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div>Feito com &#10084; por Alisson Curvina</div>
+            <div>Todos os direitos pertencem à Netflix e as respectivas empresas</div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="./scripts/scroll-el.js"></script>
+</body>
+</htm
