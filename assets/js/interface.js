@@ -48,6 +48,7 @@ async function populateHomeList(categories) {
 
 async function populateHighlights() {
   const highlight = document.getElementsByClassName('highlights')[0]
+  const movieInfoButton = document.querySelector('.btn-info')
 
   const fetchResults = await fetch("https://api.themoviedb.org/3/trending/movie/week?api_key=95105f6a9bc5fcce272e3bdeecbb375f")
   const moviesJson = await fetchResults.json()
@@ -55,11 +56,13 @@ async function populateHighlights() {
   
   const highlightedMovie = Math.floor(Math.random() * movies.length)
   const selectedMovie = movies[highlightedMovie]
+  
 
   highlight.style.backgroundImage = `url("https://image.tmdb.org/t/p/original${selectedMovie.backdrop_path}")`
   highlight.style.backgroundSize = 'cover'
   movieTitle = document.getElementById('title')
   movieTitle.innerHTML = `${selectedMovie.title}` 
+  movieInfoButton.setAttribute("data-id", selectedMovie.id )
   movieDescription = document.getElementById('review')
   movieDescription.innerHTML = `${selectedMovie.overview}`
 }

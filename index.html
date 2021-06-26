@@ -15,6 +15,7 @@
   <link href="./assets/css/main.css" rel="stylesheet" type="text/css" />
 
   <script defer src="./assets/js/interface.js"></script>
+  <script defer src="./assets/js/modal.js"></script>
 </head>
 
 <body>
@@ -26,19 +27,19 @@
         </a>
         <ul class="menu-nav nav">
           <li>
-            <a class="btn" href="#">Início</a>
+            <a href="#">Início</a>
           </li>
           <li>
-            <a class="btn" href="#">Séries</a>
+            <a href="#">Séries</a>
           </li>
           <li>
-            <a class="btn" href="#">Filmes</a>
+            <a href="#">Filmes</a>
           </li>
           <li>
-            <a class="btn" href="#">Bombando</a>
+            <a href="#">Bombando</a>
           </li>
           <li>
-            <a class="btn" href="#">Minha lista</a>
+            <a href="#">Minha lista</a>
           </li>
         </ul>
         <ul class="options-nav nav">
@@ -74,7 +75,7 @@
               <span class="material-icons">play_arrow</span>
               <span>Play Movie</span>
             </a>
-            <a href="#" class="btn">
+            <a href="#" class="btn btn-info">
               <span class="material-icons">info</span>
               Movie info
             </a>
@@ -140,10 +141,37 @@
       </div>
     </section>
 
+    <section class="modal">
+      <div class="modal-content">
+        <span class="material-icons close-btn">
+          close
+        </span>
+        <div class="movie-cover-modal">
+        </div>
+        <div class="movie-info-modal">
+          <div class="movie-name-modal">
+          </div>
+          <div class="actions">
+            <a href="#" class="btn">
+              <span class="material-icons">play_arrow</span>
+              <span>Play Movie</span>
+            </a>
+          </div>
+          <div class="movie-data-modal">
+            <span class="release-date">2021</span>
+            <span class="age">16</span>
+            <span class="rating">7.8</span>
+          </div>
+          <div class="movie-description-modal">
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
-    <div class="container-fluid">
+    <div class="container">
       <div>Feito com &#10084; por Alisson Curvina</div>
       <div>Todos os direitos pertencem à Netflix e as respectivas empresas</div>
     </div>
